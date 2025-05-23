@@ -1,0 +1,298 @@
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(360deg, #ec2da3 0%, #844eca 45%, #41b9ce 100%);
+  
+ 
+  position: relative;
+  overflow: hidden;
+} 
+
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+  transition: transform 0.6s ease;
+}
+
+
+.lolou{
+  width: 50%;
+  height: 100%;
+  
+
+}
+.lolou img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+
+ .containersign h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+}
+
+.containersign h1{
+
+  margin-bottom: 30px;
+ 
+  margin-top: 20px;
+}
+
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.8;
+}
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 15s ease-in-out infinite;
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(360deg, #a1c4fd 0%, #c2e9fb 45%, #fbc2eb 100%);
+  top: 6%;
+  left: 10%;
+  animation-duration: 5s;
+}
+
+.shape-2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(360deg, #ff9a9e 0%, #fad0c4 45%, #fbc2eb 100%);
+
+  top: 60%;
+  left: 75%;
+  animation-duration: 5s;
+}
+
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(360deg, #ffecd2 0%, #fcb69f 45%, #ff9a9e 100%);
+
+  top: 75%;
+  left: 8%;
+  animation-duration: 5s;
+}
+
+.shape-4 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(360deg, #f6d365 0%, #fda085 45%, #fbc2eb 100%);
+  top: 5%;
+  left: 70%;
+  animation-duration: 5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-30px) rotate(45deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.9;
+  }
+}
+
+
+.containersign {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.651);
+  border-radius: 25px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.6s ease;
+}
+.user-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.user-card {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.user-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-card.selected {
+  border-color: #0072ff;
+}
+
+.user-card p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.tsetfo{
+  display: flex;
+  flex-direction:row;
+}
+.tsetfoch{
+  display: flex;
+  flex-direction:column;
+}
+.sign2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.sign2 form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 60%;
+ 
+  align-items: center;
+  gap: 10px;
+}
+
+
+.sign2 form input, .sign2 form button{
+  width: 70%;
+}
+.containersign button{
+  background-color: #ad6e9b;
+  /* background-color: #8b6c4f; */
+  width: 50%;
+}
+.containersign button:hover{
+  background-color: #ece2c9;
+  color: #80507d;
+}
+.containersign h1{
+  color: #2e2e2e;
+  text-shadow: rgba(0, 0, 0, 0.726);
+}
+.sign2 form input {
+  
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #818181;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.637);
+}
+
+.containersign button {
+  
+  padding: 12px;
+  
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.containersign form div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  height: 60px;
+}
+.containersign form div img{
+  height: 50px;
+  width: 50px;
+}
+.user-selection-container {
+  text-align: center;
+  padding: 20px;
+}
+.user-selection-container h1{
+  font-size: 2.25rem;
+}
+.user-selection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.user-card {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  background-color: #dddddde8;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+}
+
+.user-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  
+}
+
+.user-card.selected {
+  border-color: #41b9ceb6;
+  transform: scale(1.1);
+}
+
+.user-card p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+.user-selection-container button{
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #7443b3;
+}

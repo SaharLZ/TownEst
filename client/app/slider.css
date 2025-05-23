@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); */
+.slider {
+    width: 100%;
+    height: 100vh;  
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .slider-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .otext {
+    margin-top: 40px;
+    width:800px;
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .overlay p{
+    color:#c7c7c7;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .takesit{
+    margin-top: 25px;
+    background-color: #fff;
+    color: #000;
+    border: 1px #000 solid;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+  .otext.takesit :hover{
+    background-color: #000;
+    color: #fff;
+  }

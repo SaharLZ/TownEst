@@ -1,0 +1,33 @@
+
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+    color: #fff;
+  }
+  
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #020024 0%, #090979 50%, #00d4ff 100%);
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .hero button {
+    background-color: #6200ee;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

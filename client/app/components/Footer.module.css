@@ -1,0 +1,92 @@
+/* styles/Footer.module.css */
+.footer {
+    --footer-background: #ed5565;
+    display: grid;
+    position: relative;
+    min-height: 12rem;
+    padding: 2rem;
+    background: var(--footer-background);
+    color: #f5f7fa;
+  }
+  
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  
+  .bubble {
+    position: absolute;
+    background: var(--footer-background);
+    border-radius: 50%;
+    animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+      bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  
+  .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+  }
+  
+  .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content > div > div {
+    margin: 0.25rem 0;
+  }
+  
+  .content a, .content p {
+    color: #f5f7fa;
+    text-decoration: none;
+  }
+  
+  .content b {
+    color: white;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .content p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  
+  .image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  

@@ -1,0 +1,347 @@
+.profile-container {
+  display: flex;
+  height: 100vh;
+   min-height: 100vh;
+    height: auto; 
+    background-color: #e6e6fd; 
+}
+
+.sidebar {
+  background-color: #905acd; 
+  height: 100vh;
+  width: 220px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.sidebar .menu ul li.active {
+  background: linear-gradient(135deg, #fa4b8e,#9b96f3, #eef2f3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.sidebar .menu li {
+  color: white;
+  font-size: 17px;
+  margin: 13px 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+.sidebar .menu li:hover {
+  background: linear-gradient(135deg, #fa4b8e,#9b96f3, #eef2f3);
+  transform: scale(1.10); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.sidebar .logo h2 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); 
+  transition: color 0.3s ease;
+}
+
+.sidebar .logo h2:hover {
+  color: #eba0e1; 
+}
+
+.sidebar .logo {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.sidebar .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.sidebar .bird-logo {
+  width: 100%;
+  height: 120px;
+  background-image: url('/assets/hh.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content {
+ 
+  flex-grow: 1; 
+  margin-left: 240px;
+  padding-bottom: 50px; 
+  background-color: #e6e6fd; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  border-radius: 0px 25px 25px 25px;
+  margin: auto;
+  background-color: #ffffff;
+  height: 50px;
+  padding: 0px 25px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #8481be;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0px 30px;
+  object-fit: contain;
+  background-color: #888d71;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 25px;
+  gap: 40px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 15px;
+  width: 62%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+  
+}
+
+.user-details .udetails p, .social-links {
+  font-size: 14px;
+}
+
+.user-details .udetails p span {
+  color: #5a5a5a;
+}
+
+.user-details .udetails h3 {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.details {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 25px;
+  gap: 20px;
+}
+
+.tsetfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-info {
+  width: 40%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fa4b8e,#9b96f3, #eef2f3); 
+  display: flex;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info:hover {
+  transform: translateY(-5px); 
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.card-info p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+}
+
+.course-list {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.course-list h2 {
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid black;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+}
+
+.course-item p {
+  font-size: 15px;
+  align-items: center;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.complete {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.limiti {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.social-links a img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+
+.project {
+  background-color: #ffffff;
+  width: 46%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px); 
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.course-list h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #6c63ff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #5a5a5a; 
+  font-weight: 600;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #333333; 
+  border-bottom: 1px solid #eee; 
+}
+
+.course-item p {
+  margin: 0;
+}
+
+.course-item .status {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.status.complete {
+  background-color: #8effa8; 
+  color: black;
+}
+
+.status.in-progress {
+  background-color: #ff6599;
+  color: black;
+}
+
+.status:hover {
+  opacity: 0.9; 
+}
+.user-details {
+  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  overflow: hidden; /* Hide any overflow of the animated border */
+}
+
+
+.user-details::before {
+  content: ''; 
+  position: absolute;
+  top: -5px; 
+  left: -5px;
+  width: calc(100% + 20px); 
+  height: calc(100% + 20px); /* Ensure it covers the entire container including the border */
+  background: linear-gradient(135deg, #fa4b8e, #9b96f3, #eef2f3);
+  border-radius: 25px; 
+  z-index: -1; 
+  animation: border-animation 2s linear infinite; /* Adjust timing as needed */
+}
+
+
+@keyframes border-animation {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
