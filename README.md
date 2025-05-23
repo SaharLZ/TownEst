@@ -50,7 +50,7 @@ Frontend: Next.js, React.js, CSS Modules
 
 Backend: Node.js, Express.js
 
-Database: MongoDB / SQL
+Database: MongoDB 
 
 Tools: Git, VS Code, Postman
 
