@@ -24,9 +24,9 @@ TownEst/
 ### 🛠️ Backend (`back/`)
 - Built with **Node.js** and **Express**
 - RESTful API for user and project management
-- Authentication system (JWT/session-based)
+- Authentication system (session-based)
 - Project CRUD operations
-- Database integration (MongoDB or SQL)
+- Database integration (MongoDB)
 
 ---
 
